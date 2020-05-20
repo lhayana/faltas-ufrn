@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/js/notas.js"></script>
+    <title>Qual nota</title>
+</head>
+
+<style>
+    body {
+        background-color: #d1c4e9;
+    }
+
+    .nav-wrapper .brand-logo img {
+        height: 4rem;
+        margin-left: 5px;
+    }
+
+    .row {
+        width: 70%;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper #4527a0 deep-purple darken-3">
+                <a href="#" class="brand-logo">
+                    <img src="img/logo.png">
+                </a>
+                <a href="#" data-activates="menu-mobile" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                     <li><a href="notas.html">Qual nota preciso tirar?</a></li>
+                    <li><a href="index.html">Quanto posso faltar?</a></li>
+                </ul>
+                <ul class="side-nav" id="menu-mobile">
+                    <li><a href="notas.html">Qual nota preciso tirar?</a></li>
+                    <li><a href="index.html">Quanto posso faltar?</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<div class="row" id="bloco">
+    <form class="col s12 m4 l8" id="adc">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Unidade 1" id="un1" type="number" step="any" class="notas" name="n1">
+                <label for="unidade1">Notas</label>
+                <input placeholder="Unidade 2" id="un2" type="number" step="any" class="notas" name="n2">
+                <label for="unidade2"></label>
+                <input placeholder="Unidade 3" id="un3" type="number" step="any" class="notas" name="n3">
+                <label for="unidade3"></label>
+                <a class="waves-effect waves-light btn-large" onclick="calcular()" id="botao">OK</a>
+                
+            </div>
+            <div class="col s12 m4 l2"> 
+                <p id="write"></p>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+
+</html>
