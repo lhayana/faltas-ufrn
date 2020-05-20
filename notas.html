@@ -14,6 +14,8 @@
 <style>
     body {
         background-color: #d1c4e9;
+        font-family: monospace;
+        font-weight: bold;
     }
 
     .nav-wrapper .brand-logo img {
@@ -25,6 +27,17 @@
         width: 70%;
         margin-top: 50px;
     }
+
+     #t1{
+       font-size: 20px;
+}
+
+#writing{
+    margin-top: 20px;
+    width: 100%;
+}
+     
+
 </style>
 
 <body>
@@ -50,21 +63,21 @@
         </nav>
     </header>
 
-<div class="row" id="bloco">
-    <form class="col s12 m4 l8" id="adc">
+<div class="row col s12 m8 l9" id="bloco">
+    <form id="adc">
         <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="Unidade 1" id="un1" type="number" step="any" class="notas" name="n1">
-                <label for="unidade1">Notas</label>
-                <input placeholder="Unidade 2" id="un2" type="number" step="any" class="notas" name="n2">
+            <div class="input-field">
+                <input placeholder="Unidade 1" class="inputH #b39ddb deep-purple lighten-3 center" id="un1" type="number" step="any" class="notas" name="n1">
+                <label id="t1" for="unidade1">Notas</label>
+                <input placeholder="Unidade 2" class="inputH #b39ddb deep-purple lighten-3 center" id="un2" type="number" step="any" class="notas" name="n2">
                 <label for="unidade2"></label>
-                <input placeholder="Unidade 3" id="un3" type="number" step="any" class="notas" name="n3">
+                <input placeholder="Unidade 3" class="inputH #b39ddb deep-purple lighten-3 center" id="un3" type="number" step="any" class="notas" name="n3">
                 <label for="unidade3"></label>
-                <a class="waves-effect waves-light btn-large" onclick="calcular()" id="botao">OK</a>
+                <a class="waves-effect waves-light btn-large #5e35b1 deep-purple darken-1" onclick="calcular()" id="botao">OK</a>
                 
             </div>
-            <div class="col s12 m4 l2"> 
-                <p id="write"></p>
+            <div class="col s12 m4 l3 #ffeb3b yellow" id="writing"> 
+                <p id="write" class="flow-text center"></p>
             </div>
         </div>
         </form>

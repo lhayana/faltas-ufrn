@@ -54,7 +54,7 @@ console.log(`1precisa tirar: ${tire}`);
               document.getElementById("write").innerHTML = `Você precisa tirar: ${media7}`;  
             }
             else{
-              document.getElementById("write").innerHTML = `Você precisa tirar 3.`;                
+              document.getElementById("write").innerHTML = `Você precisa tirar 3`;                
             }
         }
         //else if(tire < 3){

@@ -13,6 +13,8 @@
 
     body{
         background-color: #d1c4e9;
+        font-family: monospace;
+        font-weight: bold;
     }
     .nav-wrapper .brand-logo img {
         height: 4rem;
@@ -28,6 +30,20 @@
         font-size: 20px;
     }
 
+    .aviso{
+        color:#424242;
+    }
+
+    #write{
+        background-color: #ffeb3b;
+        color:#424242;
+        font-size: 20px;
+    }
+
+    #hrs{
+        color:#424242;
+        font-size: 18px;
+    }
 
 </style>
 
@@ -69,12 +85,12 @@
 
 <div class="input-field inline"></div>
     <form id="myForm" action="/action_page.php"> 
-        <label class="InsiraH" for="nf">Horas da disciplina</label>
-        <input class="inputH" type="number" name="nf" id="hrs"><br>
+        <label class="InsiraH" for="nf">Carga Horária</label>
+        <input placeholder="Horas" class="inputH #b39ddb deep-purple lighten-3 center" type="number" name="nf" id="hrs"><br>
     </form>
 
     <button onclick="myFunction()" class="waves-effect waves-light btn-large #5e35b1 deep-purple darken-1" id="ok">OK</button>
-    <p id="write"></p>
+    <p class="center" id="write"></p>
     
     </div>
 </div>
