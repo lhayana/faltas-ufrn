@@ -35,11 +35,16 @@ function calcular(){
 
     if (cont === 3) { 
 
-if (u1 >= 3 && u2 >= 3 && u3 >= 3){
+        if (u1 >= 3 && u2 >= 3 && u3 >= 3){
     tire = (15 - (ordenado[1] + ordenado[2]));
 console.log(`1precisa tirar: ${tire}`);
     document.getElementById("write").innerHTML = `Você precisa tirar: ${tire}`;
     }
+
+     if ((u1+u2+u3)/3 >= 5){
+            document.getElementById("write").innerHTML = `Você já passou!`;
+        }
+
     if (MenorQueTres === 1){
         console.log(ordenado);
         tire = (15 - (ordenado[1] + ordenado[2]));
